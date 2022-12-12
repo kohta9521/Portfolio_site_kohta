@@ -1,0 +1,168 @@
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+}
+.header__logoarea {
+    margin-top: -0.3%;
+    margin-left: 5%;
+}
+.header__logo--item {
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+}
+
+
+// ハンバーガーメニュー
+
+nav {
+    display: block;
+    position: fixed;
+    background-color: #1f1e1e;
+    width: 250px;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 0;
+}
+.open nav {
+    left: 0;
+    opacity: 1;
+}
+
+nav .inner {
+    padding: 25px;
+}
+
+nav .inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .inner ul li {
+    margin: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+nav .inner ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    font-family: 'Anton', sans-serif;
+}
+
+nav .inner ul li a:hover {
+    border-bottom: 1px solid #ff00ee ;
+}
+
+.sub__title {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+
+.toggle-btn {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s;
+    border-radius: 4px;
+}
+
+.toggle-btn span:nth-child(1) {
+    top: 4px;
+}
+.toggle-btn span:nth-child(2) {
+    top: 14px;
+}
+.toggle-btn span:nth-child(3) {
+    bottom: 4px;
+}
+
+.open .toggle-btn span {
+    background-color: rgb(0, 0, 0);
+}
+
+.open .toggle-btn span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+}
+
+.open .toggle-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.open .toggle-btn span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+}
+
+#mask {
+    display: none;
+    transition: all 0.5s;
+}
+
+.open #mask {
+    display: block;
+    background: rgba(0, 0, 0, 0.732);
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sns__btn {
+    width: 100%;
+    margin-top: 150px;
+}
+.sns__btn ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.sns__btn ul li img {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .header {
+        width: 100%;
+    }
+}
+    
+/*520px以下で文字色青色になる*/
+@media screen and (max-width: 520px) {
+    .main__title h1 {
+        width: 90%;
+        height: 45vh;
+        font-size: 1rem;
+    }
+    .main__subtitle h1 {
+        width: 90%;
+        height: 45vh;
+        font-size: 1rem;
+    }
+}
