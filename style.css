@@ -18,7 +18,7 @@
 nav {
   display: block;
   position: fixed;
-  background-color: #1f1e1e;
+  background-color: #000000;
   width: 250px;
   top: 0;
   left: -300px;
@@ -50,7 +50,7 @@ nav .inner ul li {
 
 nav .inner ul li a {
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 1.3rem;
   padding: 1rem;
   text-decoration: none;
@@ -64,7 +64,7 @@ nav .inner ul li a:hover {
 
 .sub__title {
   font-size: 13px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .toggle-btn {
