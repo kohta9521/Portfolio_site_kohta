@@ -10,13 +10,13 @@
 }
 
 .header__logo--item {
-  color: rgb(0, 0, 0);
+  color: #3CB9FC;
 }
 
 nav {
   display: block;
   position: fixed;
-  background-color: #000000;
+  background-color: #8A2EBD;
   width: 250px;
   top: 0;
   left: -300px;
@@ -43,7 +43,6 @@ nav .inner ul {
 
 nav .inner ul li {
   margin: 0;
-  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 nav .inner ul li a {
@@ -57,7 +56,7 @@ nav .inner ul li a {
 }
 
 nav .inner ul li a:hover {
-  border-bottom: 1px solid #ff00ee;
+  font-size: 1.4rem;
 }
 
 .sub__title {
@@ -82,7 +81,7 @@ nav .inner ul li a:hover {
   left: 0;
   width: 30px;
   height: 2px;
-  background-color: rgb(0, 0, 0);
+  background-color: #3CB9FC;
   transition: all 0.5s;
   border-radius: 4px;
 }
@@ -100,7 +99,7 @@ nav .inner ul li a:hover {
 }
 
 .open .toggle-btn span {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
 .open .toggle-btn span:nth-child(1) {
@@ -1242,5 +1241,5 @@ dialog::backdrop {
   border-width: 0px;
 }
 body {
-  background-color: #04005E;
+  background-color: #120052;
 }/*# sourceMappingURL=style.css.map */
