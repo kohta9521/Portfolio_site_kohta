@@ -170,22 +170,19 @@ nav .inner ul li a:hover {
   width: 100%;
   height: 90vh;
   overflow: hidden;
-  background-color: antiquewhite;
 }
 .hero__container {
-  width: 75%;
+  width: 65%;
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
-  background-color: aqua;
 }
 .hero__content {
   display: block;
   width: 100%;
-  height: 60%;
-  margin-top: 10%;
+  height: 100%;
+  margin-top: 13%;
   overflow: hidden;
-  background-color: aliceblue;
 }
 .hero__content_subtitle {
   display: block;
@@ -199,11 +196,36 @@ nav .inner ul li a:hover {
 .hero__content_title {
   display: block;
   width: 100%;
-  font-size: 60px;
+  font-size: 70px;
   margin-top: -35px;
   line-height: 130%;
   font-family: "Hind Siliguri", sans-serif;
-  background-color: aquamarine;
+  color: white;
+}
+.hero__content_article {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: -30px;
+  color: rgb(178, 178, 178);
+}
+.hero__content_button {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(180, 55, 242, 0.4078431373);
+  border: 1px solid #B537F2;
+  font-size: 15px;
+  width: 170px;
+  height: 60px;
+  line-height: 60px;
+  color: #3CB9FC;
+  font-family: "Chakra Petch", sans-serif;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 520px) {
@@ -225,4 +247,8 @@ nav .inner ul li a:hover {
 }
 body {
   background-color: #120052;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
