@@ -43,7 +43,7 @@
         &_button {
             display: block;
             width: 150px;
-            height: 50px;
+            height: 40px;
             margin-top: 50px;
             cursor: pointer;
             text-align: center;
@@ -56,6 +56,32 @@
             color: #3CB9FC;
             font-family: 'Chakra Petch', sans-serif;
             border-radius: 5px;
+        }
+    }
+}
+
+
+// sidebarの記述
+.side {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    position: fixed;
+    width: 100px;
+    height: 300px;
+    &__list {
+        margin: 0 auto;
+        &_content {
+            width: auto;
+            margin-bottom: 10px;
+            color: white;
+        }
+        &_box {
+            width: 1px;
+            height: 150px;
+            background-color: #ffffff;
+            margin-left: 11px;
+            margin-bottom: 0px;
         }
     }
 }
