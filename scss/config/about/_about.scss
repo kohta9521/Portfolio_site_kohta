@@ -1,0 +1,51 @@
+.about {
+    width: 100%;
+    height: 60vh;
+    margin-top: 15%;
+    &__container {
+        width: 65%;
+        height: 100%;
+        margin: 0 auto;
+        &__title {
+            width: 100%;
+            height: 10%;
+            &_item {
+                color: white;
+                padding-left: 10px;
+                font-family: 'Hind Siliguri', sans-serif;
+                font-size: 30px;
+            }
+            &_span {
+                color: #3CB9FC;
+                font-family: 'Chakra Petch', sans-serif;
+                font-size: 25px;
+                margin-right: 10px;
+            }
+        }
+        &__main {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: space-around;
+            &_left {
+                width: 45%;
+                height: 90%;
+                padding-top: 20px;
+                & p {
+                    font-size: 15px;
+                    color: white;
+                }
+            }
+            &_right {
+                width: 45%;
+                height: 100%;
+                padding-top: 40px;
+                & img {
+                    display: block;
+                    margin: -0 auto;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
