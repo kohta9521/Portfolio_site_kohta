@@ -57,6 +57,11 @@
             font-family: 'Chakra Petch', sans-serif;
             border-radius: 5px;
         }
+        &_button:hover {
+            background-color: #b437f2a0;
+            color: #6dccff;
+            transition-duration: 500ms;
+        }
     }
 }
 
@@ -74,7 +79,6 @@
         &_content {
             width: auto;
             margin-bottom: 10px;
-            color: white;
         }
         &_box {
             width: 1px;
