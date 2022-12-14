@@ -170,7 +170,7 @@ nav .inner ul li a:hover {
 }
 .hero {
   width: 100%;
-  height: 90vh;
+  height: 65vh;
   overflow: hidden;
 }
 .hero__container {
@@ -208,7 +208,7 @@ nav .inner ul li a:hover {
   display: block;
   width: 100%;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 145%;
   margin-top: -30px;
   color: rgb(178, 178, 178);
 }
@@ -219,8 +219,7 @@ nav .inner ul li a:hover {
   margin-top: 50px;
   cursor: pointer;
   text-align: center;
-  background-color: rgba(180, 55, 242, 0.4078431373);
-  border: 1px solid #B537F2;
+  border: 2px solid #aa00ff;
   font-size: 15px;
   width: 170px;
   height: 60px;
@@ -261,7 +260,8 @@ nav .inner ul li a:hover {
 @media screen and (max-width: 520px) {
   .hero {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    margin-top: -10%;
     overflow: hidden;
   }
   .hero__container {
@@ -273,6 +273,99 @@ nav .inner ul li a:hover {
     width: 100%;
     height: 80%;
     margin-top: 20%;
+  }
+  .hero__content_subtitle {
+    font-size: 18px;
+  }
+  .hero__content_title {
+    display: block;
+    width: 100%;
+    font-size: 38px;
+    margin-top: -20px;
+    margin-bottom: 60px;
+    line-height: 130%;
+  }
+  .hero__content_article {
+    font-size: 15px;
+  }
+  .hero__content_button {
+    margin-top: 40px;
+  }
+  .side {
+    display: none;
+  }
+}
+.about {
+  width: 100%;
+  height: 60vh;
+  margin-top: 15%;
+}
+.about__container {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+}
+.about__container__title {
+  width: 100%;
+  height: 10%;
+}
+.about__container__title_item {
+  color: white;
+  padding-left: 10px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 33px;
+}
+.about__container__title_span {
+  color: #3CB9FC;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.about__container__main {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+.about__container__main_left {
+  width: 45%;
+  height: 90%;
+  padding-top: 20px;
+}
+.about__container__main_left p {
+  font-size: 15px;
+  color: white;
+}
+.about__container__main_right {
+  width: 45%;
+  height: 100%;
+  padding-top: 40px;
+}
+.about__container__main_right img {
+  display: block;
+  margin: 0% auto;
+  width: 90%;
+}
+
+@media screen and (max-width: 520px) {
+  .about {
+    width: 100%;
+    height: 135vh;
+    margin-top: -50%;
+  }
+  .about__container {
+    width: 90%;
+    margin: 0 atuo;
+  }
+  .about__container__main {
+    display: block;
+  }
+  .about__container__main_left {
+    width: 100%;
+  }
+  .about__container__main_right {
+    width: 100%;
+    margin-top: -100%;
   }
 }
 body {
