@@ -176,7 +176,7 @@ nav .inner ul li a:hover {
   overflow: hidden;
 }
 .hero__container {
-  width: 80%;
+  width: 70%;
   height: 100%;
   margin: auto;
   background-color: aquamarine;
@@ -193,7 +193,15 @@ nav .inner ul li a:hover {
   font-family: "Hind Siliguri", sans-serif;
 }
 .hero__content_title {
-  line-height: 80px;
-  font-size: 4rem;
+  margin-top: -10px;
+  line-height: 90px;
+  font-size: 4.5rem;
   font-family: "Hind Siliguri", sans-serif;
+  background-color: antiquewhite;
+}
+.hero__content_article {
+  display: block;
+  width: 65%;
+  margin-top: -20px;
+  background-color: aqua;
 }/*# sourceMappingURL=style.css.map */
