@@ -2,3 +2,6 @@
 
 // config の読み込み
 @use "./scss/config/index" as config;
+
+// common の読み込み
+@use "./scss/common/index" as common;
