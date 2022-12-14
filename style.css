@@ -334,6 +334,7 @@ nav .inner ul li a:hover {
 }
 .about__container__main_left p {
   font-size: 15px;
+  line-height: 155%;
   color: white;
 }
 .about__container__main_right {
