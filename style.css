@@ -166,6 +166,26 @@ nav .inner ul li a:hover {
     font-size: 1rem;
   }
 }
+.hero {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  background-color: antiquewhite;
+}
+.hero__container {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: aqua;
+}
+.hero__content {
+  width: 100%;
+  height: 70%;
+  margin-top: 10%;
+  background-color: aliceblue;
+}
+
 @namespace "http://www.w3.org/1999/xhtml";
 html {
   display: block;
