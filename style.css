@@ -11,6 +11,8 @@
 
 .header__logo--item {
   color: #3CB9FC;
+  font-size: 25px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 nav {
@@ -227,6 +229,11 @@ nav .inner ul li a:hover {
   font-family: "Chakra Petch", sans-serif;
   border-radius: 5px;
 }
+.hero__content_button:hover {
+  background-color: rgba(180, 55, 242, 0.6274509804);
+  color: #6dccff;
+  transition-duration: 500ms;
+}
 
 .side {
   position: absolute;
@@ -242,12 +249,11 @@ nav .inner ul li a:hover {
 .side__list_content {
   width: auto;
   margin-bottom: 10px;
-  color: white;
 }
 .side__list_box {
   width: 1px;
   height: 150px;
-  background-color: #ffffff;
+  background-color: #3CB9FC;
   margin-left: 11px;
   margin-bottom: 0px;
 }
