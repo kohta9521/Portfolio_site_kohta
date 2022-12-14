@@ -213,7 +213,7 @@ nav .inner ul li a:hover {
 .hero__content_button {
   display: block;
   width: 150px;
-  height: 50px;
+  height: 40px;
   margin-top: 50px;
   cursor: pointer;
   text-align: center;
@@ -226,6 +226,30 @@ nav .inner ul li a:hover {
   color: #3CB9FC;
   font-family: "Chakra Petch", sans-serif;
   border-radius: 5px;
+}
+
+.side {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  position: fixed;
+  width: 100px;
+  height: 300px;
+}
+.side__list {
+  margin: 0 auto;
+}
+.side__list_content {
+  width: auto;
+  margin-bottom: 10px;
+  color: white;
+}
+.side__list_box {
+  width: 1px;
+  height: 150px;
+  background-color: #ffffff;
+  margin-left: 11px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 520px) {
@@ -251,4 +275,8 @@ body {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
