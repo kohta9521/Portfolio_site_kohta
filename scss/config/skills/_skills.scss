@@ -35,9 +35,16 @@
             }
         }
         &__chartarea {
-            width: 100%;
+            width: 33%;
             height: 30%;
-            background-color: aliceblue;
-        }
+            margin-top: 2%;
+            display: flex;
+            justify-content: space-between;
+            &_item {
+                display: block;
+                width: 33%;
+                background-color: aquamarine;
+            }
         }
     }
+}

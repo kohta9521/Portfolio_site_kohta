@@ -421,9 +421,16 @@ nav .inner ul li a:hover {
   font-size: 15px;
 }
 .skills__container__chartarea {
-  width: 100%;
+  width: 33%;
   height: 30%;
-  background-color: aliceblue;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.skills__container__chartarea_item {
+  display: block;
+  width: 33%;
+  background-color: aquamarine;
 }
 
 .work {
