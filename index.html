@@ -10,11 +10,12 @@
     <!-- crawler  noindex nofollow -->
     <meta name="robots" content="noindex , nofollow" />
 
+
     <title>Kohta Portfolio Site</title>
     <link rel="canonical" href="【正規化するURL】" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" href="【画像のパス/apple-touch-icon-precomposed.png】" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     <!-- OGP -->
     <!-- facebook -->
     <meta property="og:url" content="【ページのURL】" />
@@ -77,8 +78,9 @@
     </header>
     <!-- END HEADER -->
 
+    <main id="container">
     <!-- START HERO -->
-    <section class="hero">
+    <section class="hero fixed">
         <div class="hero__container">
             <div class="hero__content">
                 <p class="hero__content_subtitle">Hi, my name is</p>
@@ -138,7 +140,7 @@
     <!-- END SIDE -->
 
     <!-- START ABOUT -->
-    <section class="about" id="about">
+    <section class="about fixed" id="about">
         <div class="about__container">
             <div class="about__container__title">
                 <h2 class="about__container__title_item"><span class="about__container__title_span">01.</span>About me</h2>
@@ -172,23 +174,38 @@
     <!-- END ABOUT -->
 
     <!-- START EXPERIENCE -->
-    <section class="experience" id="experience">
+    <!-- <section class="experience fixed" id="experience">
         <div class="experience__container">
             <h1>EXPERIENCE AREA</h1>
         </div>
-    </section>
+    </section> -->
     <!-- END EXPERIENCE -->
 
     <!-- START SKILLS -->
-    <section class="skills"  id="skills">
+    <section class="skills fixed"  id="skills">
         <div class="skills__container">
-            <h1>SKILLS AREA</h1>
+            <div class="skills__container__title">
+                <h2 class="skills__container__title_item"><span class="about__container__title_span">02.</span>My Skills</h2>
+            </div>
+            <div class="skills__container__itemarea">
+                <p class="skills__container__itemarea_item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis itaque dolores voluptatum unde voluptatibus quod nam est, provident tempora laboriosam doloribus nostrum laudantium dolorem iusto repellat! Repudiandae, quis neque?
+                </p>
+            </div>
+            <div class="skills__container__chartarea">
+                <canvas id="myRadarChart"></canvas>
+            </div>
+            <div class="skills__container__statearea">
+                <p class="skills__container__statearea_item">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum molestiae repellendus mollitia maiores quia iure odio dignissimos autem veniam omnis nemo, consequuntur, blanditiis obcaecati assumenda provident distinctio fugiat incidunt temporibus eius sit minima praesentium voluptates. Eius magni iusto nobis.
+                </p>
+            </div>
         </div>
     </section>
     <!-- END SKILLS -->
 
     <!-- START WORK -->
-    <section class="work" id="work">
+    <section class="work fixed" id="work">
         <div class="work__container">
             <h1>WORK AREA</h1>
         </div>
@@ -196,12 +213,13 @@
     <!-- END WORK -->
 
     <!-- START CONTACT -->
-    <section class="contact" id="contact">
+    <section class="contact fixed" id="contact">
         <div class="contact__container">
             <h1>CONTACT AREA</h1>
         </div>
     </section>
     <!-- END CONTACT -->
+    </main>
 
     <!-- START FOOTER -->
     <foote class="footer" id="footer">
@@ -214,5 +232,10 @@
 
     <!-- JS -->
     <script src="./js/main.js"></script>
+    <script src="./js/parts.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+
 </body>
 </html>
