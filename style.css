@@ -298,7 +298,7 @@ nav .inner ul li a:hover {
 .about {
   width: 100%;
   height: 60vh;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .about__container {
   width: 65%;
@@ -384,15 +384,58 @@ nav .inner ul li a:hover {
 
 .skills {
   width: 100%;
-  height: 100vh;
-  margin-top: 4%;
+  height: 120vh;
+  margin-top: 8%;
   background-color: antiquewhite;
 }
 .skills__container {
-  width: 65%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
-  background-color: aqua;
+}
+.skills__container__title {
+  width: 100%;
+  height: 10%;
+}
+.skills__container__title_item {
+  color: white;
+  padding-left: 10px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 33px;
+}
+.skills__container__title_span {
+  color: #3CB9FC;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.skills__container__itemarea {
+  width: 95%;
+  height: 10%;
+  margin: 0 auto;
+  margin-top: -30px;
+  background-color: rgb(98, 73, 39);
+}
+.skills__container__itemarea_item {
+  color: white;
+  font-size: 15px;
+}
+.skills__container__chartarea {
+  width: 33%;
+  height: 30%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.skills__container__chartarea_item {
+  display: block;
+  width: 33%;
+  background-color: aquamarine;
+}
+.skills__container__statearea {
+  width: 90%;
+  margin: 3% auto;
+  border: 1px solid white;
 }
 
 .work {

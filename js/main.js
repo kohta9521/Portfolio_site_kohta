@@ -10,3 +10,5 @@ btn.onclick = () => {
 mask.onclick = () => {
     nav.classList.toggle("open");
 };
+
+
