@@ -35,11 +35,11 @@ options: {
     responsive: true,
     scale: {
       r: {// この部分うまくいかない 直しが必要!!!!!!!
-        gridLines: {
+        grid: {
           color: "#fff",
         },
         pointLabels: {
-          color: "#fff",
+          color: "black",
         },
       },
       ticks: {
@@ -64,7 +64,7 @@ var myRadarChart = new Chart(ctx, {
       //データセット
       datasets: [
           {
-              label: "FRONTEND",
+              label: "BACKEND",
               //背景色
               backgroundColor: "rgba(0,153,255,0.5)",
               //枠線の色
@@ -118,7 +118,7 @@ var myRadarChart = new Chart(ctx, {
       //データセット
       datasets: [
           {
-              label: "FRONTEND",
+              label: "OTHERS",
               //背景色
               backgroundColor: "rgba(0,153,255,0.5)",
               //枠線の色

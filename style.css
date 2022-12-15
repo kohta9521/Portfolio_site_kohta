@@ -384,7 +384,7 @@ nav .inner ul li a:hover {
 
 .skills {
   width: 100%;
-  height: 120vh;
+  height: 110vh;
   margin-top: 10%;
 }
 .skills__container {
@@ -455,6 +455,30 @@ nav .inner ul li a:hover {
   color: rgb(173, 173, 173);
 }
 
+@media screen and (max-width: 520px) {
+  .skills {
+    width: 100%;
+    height: 300vh;
+  }
+  .skills__container {
+    width: 95%;
+    margin: 0-auto;
+  }
+  .skills__container__chartarea {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+  }
+  .skills__container__chartarea_item {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .skills__container__chartmore {
+    display: none;
+  }
+}
 .work {
   width: 100%;
   height: 100vh;
