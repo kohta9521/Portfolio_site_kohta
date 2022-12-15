@@ -1,12 +1,43 @@
 .skills {
     width: 100%;
-    height: 100vh;
-    margin-top: 4%;
+    height: 120vh;
+    margin-top: 8%;
     background-color: antiquewhite;
     &__container {
-        width: 65%;
+        width: 70%;
         height: 100%;
         margin: 0 auto;
-        background-color: aqua;
+        &__title {
+            width: 100%;
+            height: 10%;
+            &_item {
+                color: white;
+                padding-left: 10px;
+                font-family: 'Hind Siliguri', sans-serif;
+                font-size: 33px;
+            }
+            &_span {
+                color: #3CB9FC;
+                font-family: 'Chakra Petch', sans-serif;
+                font-size: 25px;
+                margin-right: 10px;
+            }
+        }
+        &__itemarea {
+            width: 95%;
+            height: 10%;
+            margin: 0 auto;
+            margin-top: -30px;
+            background-color: rgb(98, 73, 39);
+            &_item {
+                color: white;
+                font-size: 15px;
+            }
+        }
+        &__chartarea {
+            width: 100%;
+            height: 30%;
+            background-color: aliceblue;
+        }
+        }
     }
-}
