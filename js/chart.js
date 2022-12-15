@@ -6,13 +6,13 @@ var myRadarChart = new Chart(ctx, {
   //データの設定
   data: {
       //データ項目のラベル
-      labels: ["総合評価", "評価１", "評価２", "評価３", "評価４"],
+      labels: ["HTML", "CSS", "SASS", "TailwindCss", "JavaScript"],
       //データセット
       datasets: [
           {
-              label: "sample",
+              label: "FRONTEND",
               //背景色
-              backgroundColor: "rgba(200,112,126,0.5)",
+              // backgroundColor: "rgba(200,112,126,0.5)",
               //枠線の色
               borderColor: "#3CB9FC",
               //結合点の背景色
@@ -52,11 +52,11 @@ var myRadarChart = new Chart(ctx, {
   //データの設定
   data: {
       //データ項目のラベル
-      labels: ["総合評価", "評価１", "評価２", "評価３", "評価４"],
+      labels: ["Go", "SQL", "Java", "C", "PHP"],
       //データセット
       datasets: [
           {
-              label: "sample",
+              label: "BACKEND",
               //背景色
               backgroundColor: "rgba(200,112,126,0.5)",
               //枠線の色
@@ -98,11 +98,11 @@ var myRadarChart = new Chart(ctx, {
   //データの設定
   data: {
       //データ項目のラベル
-      labels: ["総合評価", "評価１", "評価２", "評価３", "評価４"],
+      labels: ["Python", "React", "TypeScript", "Swift", "Linux"],
       //データセット
       datasets: [
           {
-              label: "sample",
+              label: "OTHERS",
               //背景色
               backgroundColor: "rgba(200,112,126,0.5)",
               //枠線の色

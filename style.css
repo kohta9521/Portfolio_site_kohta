@@ -432,6 +432,11 @@ nav .inner ul li a:hover {
   width: 33%;
   background-color: aquamarine;
 }
+.skills__container__statearea {
+  width: 90%;
+  margin: 3% auto;
+  border: 1px solid white;
+}
 
 .work {
   width: 100%;
