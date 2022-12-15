@@ -12,28 +12,36 @@ var myRadarChart = new Chart(ctx, {
           {
               label: "FRONTEND",
               //背景色
-              // backgroundColor: "rgba(200,112,126,0.5)",
+              backgroundColor: "rgba(0,153,255,0.5)",
               //枠線の色
               borderColor: "#3CB9FC",
+              borderWidth: "1.5px",
               //結合点の背景色
               pointBackgroundColor: "#8A2EBD",
               //結合点の枠線の色
-              pointBorderColor: "#fff",
+              // pointBorderColor: "#fff",
               //結合点の背景色（ホバ時）
-              pointHoverBackgroundColor: "#fff",
+              // pointHoverBackgroundColor: "#fff",
               //結合点の枠線の色（ホバー時）
-              pointHoverBorderColor: "rgba(200,112,126,1)",
               //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
               hitRadius: 5,
               //グラフのデータ
-              data: [4,3,4,4,4]
+              data: [5,4,3,2,4],
           }
       ]
   },
- options: {
+options: {
     // レスポンシブ指定
     responsive: true,
     scale: {
+      r: {// この部分うまくいかない 直しが必要!!!!!!!
+        gridLines: {
+          color: "#fff",
+        },
+        pointLabels: {
+          color: "#fff",
+        },
+      },
       ticks: {
         // 最小値の値を0指定
         beginAtZero:true,
@@ -52,34 +60,42 @@ var myRadarChart = new Chart(ctx, {
   //データの設定
   data: {
       //データ項目のラベル
-      labels: ["Go", "SQL", "Java", "C", "PHP"],
+      labels: ["Go", "Python", "SQL", "PHP", "Java"],
       //データセット
       datasets: [
           {
-              label: "BACKEND",
+              label: "FRONTEND",
               //背景色
-              backgroundColor: "rgba(200,112,126,0.5)",
+              backgroundColor: "rgba(0,153,255,0.5)",
               //枠線の色
               borderColor: "#3CB9FC",
+              borderWidth: "1.5px",
               //結合点の背景色
               pointBackgroundColor: "#8A2EBD",
               //結合点の枠線の色
-              pointBorderColor: "#fff",
+              // pointBorderColor: "#fff",
               //結合点の背景色（ホバ時）
-              pointHoverBackgroundColor: "#fff",
+              // pointHoverBackgroundColor: "#fff",
               //結合点の枠線の色（ホバー時）
-              pointHoverBorderColor: "rgba(200,112,126,1)",
               //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
               hitRadius: 5,
               //グラフのデータ
-              data: [4,3,4,4,4]
+              data: [2,3,3,2,1],
           }
       ]
   },
- options: {
+options: {
     // レスポンシブ指定
     responsive: true,
     scale: {
+      r: {// この部分うまくいかない 直しが必要!!!!!!!
+        grid: {
+          color: "#fff",
+        },
+        pointLabels: {
+          color: "#fff",
+        },
+      },
       ticks: {
         // 最小値の値を0指定
         beginAtZero:true,
@@ -98,15 +114,16 @@ var myRadarChart = new Chart(ctx, {
   //データの設定
   data: {
       //データ項目のラベル
-      labels: ["Python", "React", "TypeScript", "Swift", "Linux"],
+      labels: ["React", "TypeScript", "C", "Swift", "Linux"],
       //データセット
       datasets: [
           {
-              label: "OTHERS",
+              label: "FRONTEND",
               //背景色
-              backgroundColor: "rgba(200,112,126,0.5)",
+              backgroundColor: "rgba(0,153,255,0.5)",
               //枠線の色
               borderColor: "#3CB9FC",
+              borderWidth: "1.5px",
               //結合点の背景色
               pointBackgroundColor: "#8A2EBD",
               //結合点の枠線の色
@@ -114,18 +131,25 @@ var myRadarChart = new Chart(ctx, {
               //結合点の背景色（ホバ時）
               pointHoverBackgroundColor: "#fff",
               //結合点の枠線の色（ホバー時）
-              pointHoverBorderColor: "rgba(200,112,126,1)",
               //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
               hitRadius: 5,
               //グラフのデータ
-              data: [4,3,4,4,4]
+              data: [4,1,2,1,3],
           }
       ]
   },
- options: {
+options: {
     // レスポンシブ指定
     responsive: true,
     scale: {
+      r: {// この部分うまくいかない 直しが必要!!!!!!!
+        grid: {
+          color: "#fff",
+        },
+        pointLabels: {
+          color: "#fff",
+        },
+      },
       ticks: {
         // 最小値の値を0指定
         beginAtZero:true,
