@@ -132,7 +132,7 @@ var myRadarChart = new Chart(ctx, {
               pointHoverBackgroundColor: "#fff",
               //結合点の枠線の色（ホバー時）
               //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
-              hitRadius: 5,
+              // hitRadius: 5,
               //グラフのデータ
               data: [4,1,2,1,3],
           }
@@ -155,7 +155,7 @@ options: {
         beginAtZero:true,
         min: 0,
         // 最大値を指定
-        max: 5,
+        // max: 5,
       }
     }
   }
