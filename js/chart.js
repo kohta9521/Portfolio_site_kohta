@@ -1,67 +1,193 @@
-function レーダーチャート() {
-    var ctx = document.getElementById("skill_rader").getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: "radar",    // グラフの種類　レーダーチャート
-        data: {
-            labels:  ["国語", "英語", "数学", "理科", "社会"],  // 軸のラベル
-            datasets: [
-                {
-                    label: "生徒Ａ",
-                    data: [70, 80, 60, 40, 70],
-                    backgroundColor: "rgba(255,0,0,0.2)", // 線の下の塗りつぶしの色
-                    borderColor: "red",                   // 線の色
-                    borderWidth: 2,                       // 線の幅
-                    pointStyle: "circle",                 // 点の形状
-                    pointRadius: 6,                       // 点形状の半径
-                    pointBorderColor: "red",              // 点の境界線の色
-                    pointBorderWidth: 2,                  // 点の境界線の幅
-                    pointBackgroundColor: "yellow"        // 点の塗りつぶし色
-                },
-                {
-                    label: "生徒Ｂ",
-                    data: [45, 45, 35, 85, 45],
-                    fill: false,                          // 塗りつぶしなし backgroundColor不要
-                    borderColor: "blue",
-                    borderWidth: 2,
-                    pointStyle: "rect",
-                    pointRadius: 6,
-                    pointBorderColor: "blue",
-                    pointBorderWidth: 2,
-                    pointBackgroundColor: "green"
-                }
-            ]
-        },
-        options: {
-            responsive: false,
-            title: {                 // タイトル
+
+// chart 1
+var ctx = document.getElementById("myChart1");
+var myChart = new Chart(ctx, {
+    //グラフの種類
+    type: 'radar',
+    //データの設定
+    data: {
+        //データ項目のラベル
+        labels: ["りんご", "ぶどう", "ばなな", "めろん", "すいか"],
+        //データセット
+        datasets: [{
+            label: "FRONTEND",
+            //背景色
+            backgroundColor: "rgba(51,255,51,0.5)",
+            //枠線の色
+            borderColor: "rgba(51,255,51,1)",
+            //結合点の背景色
+            pointBackgroundColor: "rgba(51,255,51,1)",
+            //結合点の枠線の色
+            pointBorderColor: "#fff",
+            //結合点の背景色（ホバ時）
+            pointHoverBackgroundColor: "#fff",
+            //結合点の枠線の色（ホバー時）
+            pointHoverBorderColor: "rgba(51,255,51,1)",
+            //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
+            hitRadius: 5,
+            //グラフのデータ
+            data: [1, 4, 2, 4, 3]
+        }]
+    },
+    //オプションの設定
+    options: {
+        // レスポンシブ指定
+        responsive: true,
+        maintainAspectRatio: false,
+        scale: {
+            ticks: {
+                // 最小値の値を0指定
+                beginAtZero: true,
+                min: 0,
+                stepSize: 1,
+                fontColor: "blue",
+                // 最大値を指定
+                max: 5,
+            },
+            pointLabels: {
+                fontSize: 11,
+                fontColor: "white",
+            },
+            gridLines: {         // 補助線（目盛の線）
                 display: true,
-                fontSize: 20,
-                text: "レーダーチャート"
-            },
-            legend: {
-                position: 'bottom'   // 凡例の表示位置
-            },
-            scale: {
-                pointLabels: {       // 軸のラベル（"国語"など）
-                    fontSize: 16,         // 文字の大きさ
-                    fontColor: "green"    // 文字の色
-                },
-                ticks: {             // 目盛り
-                    min: 0,              // 最小値
-                    max: 100,            // 最大値
-                    stepSize: 20,        // 目盛の間隔
-                    fontSize: 12,        // 目盛り数字の大きさ
-                    fontColor: "purple"  // 目盛り数字の色
-                },
-                angleLines: {        // 軸（放射軸）
-                    display: true,
-                    color: "purple"
-                },
-                gridLines: {         // 補助線（目盛の線）
-                    display: true,
-                    color: "lime"
-                }
+                color: "white",
+                lineWidth: 0.5,
+            }
+        },
+        //ラベル非表示
+        legend: {
+            fontSize: 10,
+            color: "white",
+            labels: {
+                // このフォント設定はグローバルプロパティを上書きします。
+                fontSize: 14,
             }
         }
-    });
-}
+    }
+});
+
+
+
+// chart 2
+var ctx = document.getElementById("myChart2");
+var myChart = new Chart(ctx, {
+    //グラフの種類
+    type: 'radar',
+    //データの設定
+    data: {
+        //データ項目のラベル
+        labels: ["りんご", "ぶどう", "ばなな", "めろん", "すいか"],
+        //データセット
+        datasets: [{
+            label: "FRONTEND",
+            //背景色
+            backgroundColor: "rgba(51,255,51,0.5)",
+            //枠線の色
+            borderColor: "rgba(51,255,51,1)",
+            //結合点の背景色
+            pointBackgroundColor: "rgba(51,255,51,1)",
+            //結合点の枠線の色
+            pointBorderColor: "#fff",
+            //結合点の背景色（ホバ時）
+            pointHoverBackgroundColor: "#fff",
+            //結合点の枠線の色（ホバー時）
+            pointHoverBorderColor: "rgba(51,255,51,1)",
+            //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
+            hitRadius: 5,
+            //グラフのデータ
+            data: [1, 4, 2, 4, 3]
+        }]
+    },
+    //オプションの設定
+    options: {
+        // レスポンシブ指定
+        responsive: true,
+        maintainAspectRatio: false,
+        scale: {
+            ticks: {
+                // 最小値の値を0指定
+                beginAtZero: true,
+                min: 0,
+                stepSize: 1,
+                // 最大値を指定
+                max: 5,
+            },
+            pointLabels: {
+                fontSize: 10
+            }
+        },
+        //ラベル非表示
+        legend: {
+            // display: false
+            fontSize: 10,
+            labels: {
+                // このフォント設定はグローバルプロパティを上書きします。
+                fontSize: 14,
+            }
+        }
+
+    }
+});
+
+
+
+// chart 3
+var ctx = document.getElementById("myChart3");
+var myChart = new Chart(ctx, {
+    //グラフの種類
+    type: 'radar',
+    //データの設定
+    data: {
+        //データ項目のラベル
+        labels: ["りんご", "ぶどう", "ばなな", "めろん", "すいか"],
+        //データセット
+        datasets: [{
+            label: "FRONTEND",
+            //背景色
+            backgroundColor: "rgba(51,255,51,0.5)",
+            //枠線の色
+            borderColor: "rgba(51,255,51,1)",
+            //結合点の背景色
+            pointBackgroundColor: "rgba(51,255,51,1)",
+            //結合点の枠線の色
+            pointBorderColor: "#fff",
+            //結合点の背景色（ホバ時）
+            pointHoverBackgroundColor: "#fff",
+            //結合点の枠線の色（ホバー時）
+            pointHoverBorderColor: "rgba(51,255,51,1)",
+            //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
+            hitRadius: 5,
+            //グラフのデータ
+            data: [1, 4, 2, 4, 3]
+        }]
+    },
+    //オプションの設定
+    options: {
+        // レスポンシブ指定
+        responsive: true,
+        maintainAspectRatio: false,
+        scale: {
+            ticks: {
+                // 最小値の値を0指定
+                beginAtZero: true,
+                min: 0,
+                stepSize: 1,
+                // 最大値を指定
+                max: 5,
+            },
+            pointLabels: {
+                fontSize: 10
+            }
+        },
+        //ラベル非表示
+        legend: {
+            // display: false
+            fontSize: 10,
+            labels: {
+                // このフォント設定はグローバルプロパティを上書きします。
+                fontSize: 14,
+            }
+        }
+
+    }
+});
