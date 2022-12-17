@@ -7,22 +7,22 @@ var myChart = new Chart(ctx, {
     //データの設定
     data: {
         //データ項目のラベル
-        labels: ["りんご", "ぶどう", "ばなな", "めろん", "すいか"],
+        labels: ["HTML", "CSS", "SCSS", "Tailwindcss", "JavaScript"],
         //データセット
         datasets: [{
             label: "FRONTEND",
             //背景色
-            backgroundColor: "rgba(51,255,51,0.5)",
+            backgroundColor: "#ff207972",
             //枠線の色
-            borderColor: "rgba(51,255,51,1)",
+            borderColor: "#ff2979",
             //結合点の背景色
-            pointBackgroundColor: "rgba(51,255,51,1)",
+            pointBackgroundColor: "#440BD4)",
             //結合点の枠線の色
-            pointBorderColor: "#fff",
+            pointBorderColor: "#440BD4",
             //結合点の背景色（ホバ時）
-            pointHoverBackgroundColor: "#fff",
+            pointHoverBackgroundColor: "#440BD4",
             //結合点の枠線の色（ホバー時）
-            pointHoverBorderColor: "rgba(51,255,51,1)",
+            pointHoverBorderColor: "#440BD4",
             //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
             hitRadius: 5,
             //グラフのデータ
@@ -67,8 +67,7 @@ var myChart = new Chart(ctx, {
 });
 
 
-
-// chart 2
+// chart 1
 var ctx = document.getElementById("myChart2");
 var myChart = new Chart(ctx, {
     //グラフの種類
@@ -76,22 +75,22 @@ var myChart = new Chart(ctx, {
     //データの設定
     data: {
         //データ項目のラベル
-        labels: ["りんご", "ぶどう", "ばなな", "めろん", "すいか"],
+        labels: ["HTML", "CSS", "SCSS", "Tailwindcss", "JavaScript"],
         //データセット
         datasets: [{
-            label: "FRONTEND",
+            label: "BACKEND",
             //背景色
-            backgroundColor: "rgba(51,255,51,0.5)",
+            backgroundColor: "#ff207972",
             //枠線の色
-            borderColor: "rgba(51,255,51,1)",
+            borderColor: "#ff2979",
             //結合点の背景色
-            pointBackgroundColor: "rgba(51,255,51,1)",
+            pointBackgroundColor: "#440BD4)",
             //結合点の枠線の色
-            pointBorderColor: "#fff",
+            pointBorderColor: "#440BD4",
             //結合点の背景色（ホバ時）
-            pointHoverBackgroundColor: "#fff",
+            pointHoverBackgroundColor: "#440BD4",
             //結合点の枠線の色（ホバー時）
-            pointHoverBorderColor: "rgba(51,255,51,1)",
+            pointHoverBorderColor: "#440BD4",
             //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
             hitRadius: 5,
             //グラフのデータ
@@ -109,29 +108,34 @@ var myChart = new Chart(ctx, {
                 beginAtZero: true,
                 min: 0,
                 stepSize: 1,
+                fontColor: "blue",
                 // 最大値を指定
                 max: 5,
             },
             pointLabels: {
-                fontSize: 10
+                fontSize: 11,
+                fontColor: "white",
+            },
+            gridLines: {         // 補助線（目盛の線）
+                display: true,
+                color: "white",
+                lineWidth: 0.5,
             }
         },
         //ラベル非表示
         legend: {
-            // display: false
             fontSize: 10,
+            color: "white",
             labels: {
                 // このフォント設定はグローバルプロパティを上書きします。
                 fontSize: 14,
             }
         }
-
     }
 });
 
 
-
-// chart 3
+// chart 1
 var ctx = document.getElementById("myChart3");
 var myChart = new Chart(ctx, {
     //グラフの種類
@@ -139,22 +143,22 @@ var myChart = new Chart(ctx, {
     //データの設定
     data: {
         //データ項目のラベル
-        labels: ["りんご", "ぶどう", "ばなな", "めろん", "すいか"],
+        labels: ["HTML", "CSS", "SCSS", "Tailwindcss", "JavaScript"],
         //データセット
         datasets: [{
-            label: "FRONTEND",
+            label: "OTHERS",
             //背景色
-            backgroundColor: "rgba(51,255,51,0.5)",
+            backgroundColor: "#ff207972",
             //枠線の色
-            borderColor: "rgba(51,255,51,1)",
+            borderColor: "#ff2979",
             //結合点の背景色
-            pointBackgroundColor: "rgba(51,255,51,1)",
+            pointBackgroundColor: "#440BD4)",
             //結合点の枠線の色
-            pointBorderColor: "#fff",
+            pointBorderColor: "#440BD4",
             //結合点の背景色（ホバ時）
-            pointHoverBackgroundColor: "#fff",
+            pointHoverBackgroundColor: "#440BD4",
             //結合点の枠線の色（ホバー時）
-            pointHoverBorderColor: "rgba(51,255,51,1)",
+            pointHoverBorderColor: "#440BD4",
             //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
             hitRadius: 5,
             //グラフのデータ
@@ -172,22 +176,29 @@ var myChart = new Chart(ctx, {
                 beginAtZero: true,
                 min: 0,
                 stepSize: 1,
+                fontColor: "blue",
                 // 最大値を指定
                 max: 5,
             },
             pointLabels: {
-                fontSize: 10
+                fontSize: 11,
+                fontColor: "white",
+            },
+            gridLines: {         // 補助線（目盛の線）
+                display: true,
+                color: "white",
+                lineWidth: 0.5,
             }
         },
         //ラベル非表示
         legend: {
-            // display: false
             fontSize: 10,
+            color: "white",
             labels: {
                 // このフォント設定はグローバルプロパティを上書きします。
                 fontSize: 14,
             }
         }
-
     }
 });
+
