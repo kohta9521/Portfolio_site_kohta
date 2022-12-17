@@ -1,162 +1,67 @@
-var ctx = document.getElementById("myRadarChart1");
-
-var myRadarChart = new Chart(ctx, {
-  //グラフの種類
-  type: 'radar',
-  //データの設定
-  data: {
-      //データ項目のラベル
-      labels: ["HTML", "CSS", "SASS", "TailwindCss", "JavaScript"],
-      //データセット
-      datasets: [
-          {
-              label: "FRONTEND",
-              //背景色
-              backgroundColor: "rgba(0,153,255,0.5)",
-              //枠線の色
-              borderColor: "#3CB9FC",
-              borderWidth: "1.5px",
-              //結合点の背景色
-              pointBackgroundColor: "#8A2EBD",
-              //結合点の枠線の色
-              // pointBorderColor: "#fff",
-              //結合点の背景色（ホバ時）
-              // pointHoverBackgroundColor: "#fff",
-              //結合点の枠線の色（ホバー時）
-              //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
-              hitRadius: 5,
-              //グラフのデータ
-              data: [5,4,3,2,4],
-          }
-      ]
-  },
-options: {
-    // レスポンシブ指定
-    responsive: true,
-    scale: {
-      r: {// この部分うまくいかない 直しが必要!!!!!!!
-        grid: {
-          color: "#fff",
+function レーダーチャート() {
+    var ctx = document.getElementById("skill_rader").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: "radar",    // グラフの種類　レーダーチャート
+        data: {
+            labels:  ["国語", "英語", "数学", "理科", "社会"],  // 軸のラベル
+            datasets: [
+                {
+                    label: "生徒Ａ",
+                    data: [70, 80, 60, 40, 70],
+                    backgroundColor: "rgba(255,0,0,0.2)", // 線の下の塗りつぶしの色
+                    borderColor: "red",                   // 線の色
+                    borderWidth: 2,                       // 線の幅
+                    pointStyle: "circle",                 // 点の形状
+                    pointRadius: 6,                       // 点形状の半径
+                    pointBorderColor: "red",              // 点の境界線の色
+                    pointBorderWidth: 2,                  // 点の境界線の幅
+                    pointBackgroundColor: "yellow"        // 点の塗りつぶし色
+                },
+                {
+                    label: "生徒Ｂ",
+                    data: [45, 45, 35, 85, 45],
+                    fill: false,                          // 塗りつぶしなし backgroundColor不要
+                    borderColor: "blue",
+                    borderWidth: 2,
+                    pointStyle: "rect",
+                    pointRadius: 6,
+                    pointBorderColor: "blue",
+                    pointBorderWidth: 2,
+                    pointBackgroundColor: "green"
+                }
+            ]
         },
-        pointLabels: {
-          color: "black",
-        },
-      },
-      ticks: {
-        // 最小値の値を0指定
-        beginAtZero:true,
-        min: 0,
-        // 最大値を指定
-        max: 5,
-      }
-    }
-  }
-});
-var ctx = document.getElementById("myRadarChart2");
-
-var myRadarChart = new Chart(ctx, {
-  //グラフの種類
-  type: 'radar',
-  //データの設定
-  data: {
-      //データ項目のラベル
-      labels: ["Go", "Python", "SQL", "PHP", "Java"],
-      //データセット
-      datasets: [
-          {
-              label: "BACKEND",
-              //背景色
-              backgroundColor: "rgba(0,153,255,0.5)",
-              //枠線の色
-              borderColor: "#3CB9FC",
-              borderWidth: "1.5px",
-              //結合点の背景色
-              pointBackgroundColor: "#8A2EBD",
-              //結合点の枠線の色
-              // pointBorderColor: "#fff",
-              //結合点の背景色（ホバ時）
-              // pointHoverBackgroundColor: "#fff",
-              //結合点の枠線の色（ホバー時）
-              //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
-              hitRadius: 5,
-              //グラフのデータ
-              data: [2,3,3,2,1],
-          }
-      ]
-  },
-options: {
-    // レスポンシブ指定
-    responsive: true,
-    scale: {
-      r: {// この部分うまくいかない 直しが必要!!!!!!!
-        grid: {
-          color: "#fff",
-        },
-        pointLabels: {
-          color: "#fff",
-        },
-      },
-      ticks: {
-        // 最小値の値を0指定
-        beginAtZero:true,
-        min: 0,
-        // 最大値を指定
-        max: 5,
-      }
-    }
-  }
-});
-var ctx = document.getElementById("myRadarChart3");
-
-var myRadarChart = new Chart(ctx, {
-  //グラフの種類
-  type: 'radar',
-  //データの設定
-  data: {
-      //データ項目のラベル
-      labels: ["React", "TypeScript", "C", "Swift", "Linux"],
-      //データセット
-      datasets: [
-          {
-              label: "OTHERS",
-              //背景色
-              backgroundColor: "rgba(0,153,255,0.5)",
-              //枠線の色
-              borderColor: "#3CB9FC",
-              borderWidth: "1.5px",
-              //結合点の背景色
-              pointBackgroundColor: "#8A2EBD",
-              //結合点の枠線の色
-              pointBorderColor: "#fff",
-              //結合点の背景色（ホバ時）
-              pointHoverBackgroundColor: "#fff",
-              //結合点の枠線の色（ホバー時）
-              //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
-              // hitRadius: 5,
-              //グラフのデータ
-              data: [4,1,2,1,3],
-          }
-      ]
-  },
-options: {
-    // レスポンシブ指定
-    responsive: true,
-    scale: {
-      r: {// この部分うまくいかない 直しが必要!!!!!!!
-        grid: {
-          color: "#fff",
-        },
-        pointLabels: {
-          color: "#fff",
-        },
-      },
-      ticks: {
-        // 最小値の値を0指定
-        beginAtZero:true,
-        min: 0,
-        // 最大値を指定
-        // max: 5,
-      }
-    }
-  }
-});
+        options: {
+            responsive: false,
+            title: {                 // タイトル
+                display: true,
+                fontSize: 20,
+                text: "レーダーチャート"
+            },
+            legend: {
+                position: 'bottom'   // 凡例の表示位置
+            },
+            scale: {
+                pointLabels: {       // 軸のラベル（"国語"など）
+                    fontSize: 16,         // 文字の大きさ
+                    fontColor: "green"    // 文字の色
+                },
+                ticks: {             // 目盛り
+                    min: 0,              // 最小値
+                    max: 100,            // 最大値
+                    stepSize: 20,        // 目盛の間隔
+                    fontSize: 12,        // 目盛り数字の大きさ
+                    fontColor: "purple"  // 目盛り数字の色
+                },
+                angleLines: {        // 軸（放射軸）
+                    display: true,
+                    color: "purple"
+                },
+                gridLines: {         // 補助線（目盛の線）
+                    display: true,
+                    color: "lime"
+                }
+            }
+        }
+    });
+}
