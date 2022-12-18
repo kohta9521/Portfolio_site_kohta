@@ -22,40 +22,31 @@
                 margin-right: 10px;
             }
         }
-        &__itemarea {
+        &__article {
             width: 95%;
             height: 10%;
             margin: 0 auto;
-            margin-top: -30px;
             &_item {
                 color: white;
-                font-size: 15px;
             }
         }
         &__chartarea {
-            width: 33%;
-            height: 30%;
+            width: 100%;
+            height: 50%;
             margin-top: 5%;
             display: flex;
             justify-content: space-between;
             &_item {
-                display: block;
-                width: 33%;
-                background-color: aquamarine;
+                width: 25%;
             }
         }
-        &__chartmore {
-            width: 100%;
-            height: 15%;
-            display: flex;
-            margin-top: 2%;
-            justify-content: space-between;
+        &__itemarea {
+            width: 95%;
+            height: 10%;
+            margin: 0 auto;
             &_item {
-                width: 33%;
-                height: 100%;
-                text-align: center;
-                color: rgb(173, 173, 173);
-                font-size: 12px;
+                color: white;
+                font-size: 15px;
             }
         }
         &__statearea {
