@@ -26,7 +26,7 @@ var myChart = new Chart(ctx, {
             //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
             hitRadius: 5,
             //グラフのデータ
-            data: [1, 4, 2, 4, 3]
+            data: [5, 3, 3, 2, 3]
         }]
     },
     //オプションの設定
@@ -67,7 +67,7 @@ var myChart = new Chart(ctx, {
 });
 
 
-// chart 1
+// chart 2
 var ctx = document.getElementById("myChart2");
 var myChart = new Chart(ctx, {
     //グラフの種類
@@ -75,7 +75,7 @@ var myChart = new Chart(ctx, {
     //データの設定
     data: {
         //データ項目のラベル
-        labels: ["HTML", "CSS", "SCSS", "Tailwindcss", "JavaScript"],
+        labels: ["Python", "Java", "TypeScripts", "Go", "PHP"],
         //データセット
         datasets: [{
             label: "BACKEND",
@@ -94,7 +94,7 @@ var myChart = new Chart(ctx, {
             //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
             hitRadius: 5,
             //グラフのデータ
-            data: [1, 4, 2, 4, 3]
+            data: [2, 1, 3, 2, 1]
         }]
     },
     //オプションの設定
@@ -143,7 +143,7 @@ var myChart = new Chart(ctx, {
     //データの設定
     data: {
         //データ項目のラベル
-        labels: ["HTML", "CSS", "SCSS", "Tailwindcss", "JavaScript"],
+        labels: ["React", "Swift", "C", "AWS", "SQL"],
         //データセット
         datasets: [{
             label: "OTHERS",
@@ -162,7 +162,7 @@ var myChart = new Chart(ctx, {
             //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
             hitRadius: 5,
             //グラフのデータ
-            data: [1, 4, 2, 4, 3]
+            data: [4, 2, 2, 4, 3]
         }]
     },
     //オプションの設定

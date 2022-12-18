@@ -424,8 +424,7 @@ nav .inner ul li a:hover {
   justify-content: space-between;
 }
 .skills__container__chartarea_item {
-  width: 20%;
-  height: 100%;
+  width: 25%;
 }
 .skills__container__itemarea {
   width: 95%;
@@ -478,9 +477,27 @@ nav .inner ul li a:hover {
   background-color: antiquewhite;
 }
 .work__container {
-  width: 65%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
+  background-color: aqua;
+}
+.work__container__item1 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(143, 101, 47);
+}
+.work__container__item1_left {
+  width: 40%;
+}
+.work__container__item1_left img {
+  width: 400px;
+}
+.work__container__item1_right {
+  display: block;
+  width: 45%;
   background-color: aqua;
 }
 
