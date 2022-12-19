@@ -33,19 +33,19 @@
             width: 80%;
             height: 35%;
             margin: 0 auto;
-            margin-bottom: 5%;
-            background-color: aqua;
             display: flex;
             &__area {
                 width: 30%;
                 height: 100%;
                 margin: 0 auto;
-                background-color: antiquewhite;
+                &_title {
+                    color: white;
+                    text-align: center;
+                }
                 &_item {
                     width: 40%;
                     height: 10%;               
                     margin: 20px auto;
-                    background-color: rgb(6, 188, 2);
                     display: flex;
                     justify-content: space-between;
                     &_number {
@@ -58,8 +58,9 @@
         }
         &__itemarea {
             width: 95%;
-            height: 10%;
-            margin: 0 auto;
+            height: 7%;
+            margin: 5% auto;
+            border: 1px dotted  white;
             &_item {
                 color: white;
                 font-size: 15px;
