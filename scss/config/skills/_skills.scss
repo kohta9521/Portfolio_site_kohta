@@ -31,8 +31,9 @@
         }
         &__skills {
             width: 80%;
-            height: 50%;
+            height: 35%;
             margin: 0 auto;
+            margin-bottom: 5%;
             background-color: aqua;
             display: flex;
             &__area {
@@ -43,7 +44,7 @@
                 &_item {
                     width: 40%;
                     height: 10%;               
-                    margin: 0 auto;
+                    margin: 20px auto;
                     background-color: rgb(6, 188, 2);
                     display: flex;
                     justify-content: space-between;
