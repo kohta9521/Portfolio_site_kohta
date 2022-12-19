@@ -170,7 +170,7 @@ nav .inner ul li a:hover {
 }
 .hero {
   width: 100%;
-  height: 75vh;
+  height: 90vh;
   overflow: hidden;
 }
 .hero__container {
@@ -297,7 +297,7 @@ nav .inner ul li a:hover {
 }
 .about {
   width: 100%;
-  height: 60vh;
+  height: 80vh;
 }
 .about__container {
   width: 65%;
@@ -333,7 +333,6 @@ nav .inner ul li a:hover {
   padding-top: 20px;
 }
 .about__container__main_left p {
-  margin-top: 10%;
   font-size: 15px;
   line-height: 155%;
   color: white;
