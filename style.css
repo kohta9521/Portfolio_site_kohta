@@ -384,7 +384,7 @@ nav .inner ul li a:hover {
 
 .skills {
   width: 100%;
-  height: 110vh;
+  height: 80vh;
 }
 .skills__container {
   width: 70%;
@@ -445,7 +445,7 @@ nav .inner ul li a:hover {
 .skills__container__itemarea {
   width: 95%;
   height: 7%;
-  margin: 5% auto;
+  margin: 10% auto;
   border: 1px dotted white;
 }
 .skills__container__itemarea_item {
