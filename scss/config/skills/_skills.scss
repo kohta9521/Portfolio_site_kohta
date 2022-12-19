@@ -32,7 +32,7 @@
         &__skills {
             width: 80%;
             height: 35%;
-            margin: 0 auto;
+            margin: 5% auto;
             display: flex;
             &__area {
                 width: 30%;
@@ -45,11 +45,11 @@
                 &_item {
                     width: 40%;
                     height: 10%;               
-                    margin: 20px auto;
+                    margin: 30px auto;
                     display: flex;
                     justify-content: space-between;
                     &_number {
-                        font-size: 2rem;
+                        font-size: 1/3rem;
                         line-height: 100%;
                         color: rgb(255, 255, 255);
                     }
@@ -59,7 +59,7 @@
         &__itemarea {
             width: 95%;
             height: 7%;
-            margin: 10% auto;
+            margin: 18% auto;
             border: 1px dotted  white;
             &_item {
                 color: white;
