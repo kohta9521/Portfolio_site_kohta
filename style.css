@@ -418,7 +418,7 @@ nav .inner ul li a:hover {
 .skills__container__skills {
   width: 80%;
   height: 35%;
-  margin: 0 auto;
+  margin: 5% auto;
   display: flex;
 }
 .skills__container__skills__area {
@@ -433,19 +433,19 @@ nav .inner ul li a:hover {
 .skills__container__skills__area_item {
   width: 40%;
   height: 10%;
-  margin: 20px auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
 }
 .skills__container__skills__area_item_number {
-  font-size: 2rem;
+  font-size: 1/3rem;
   line-height: 100%;
   color: rgb(255, 255, 255);
 }
 .skills__container__itemarea {
   width: 95%;
   height: 7%;
-  margin: 10% auto;
+  margin: 18% auto;
   border: 1px dotted white;
 }
 .skills__container__itemarea_item {
