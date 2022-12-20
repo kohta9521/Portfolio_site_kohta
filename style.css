@@ -371,15 +371,57 @@ nav .inner ul li a:hover {
 }
 .experience {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   margin-top: 7%;
-  background-color: antiquewhite;
+  margin-bottom: 9%;
 }
 .experience__container {
   width: 65%;
   height: 100%;
   margin: 0 auto;
-  background-color: aqua;
+}
+.experience__container__title {
+  text-align: left;
+}
+.experience__container__area {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-around;
+}
+.experience__container__area__left {
+  width: 45%;
+  height: 100%;
+  border: 1px solid white;
+}
+.experience__container__area__left__title {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+}
+.experience__container__area__left__article {
+  display: block;
+  width: 95%;
+  margin: 3% auto;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+.experience__container__area__right {
+  width: 45%;
+  height: 100%;
+  border: 1px solid white;
+}
+.experience__container__area__right__title {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+}
+.experience__container__area__right__article {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
 }
 
 .skills {
