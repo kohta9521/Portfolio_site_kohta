@@ -537,8 +537,11 @@ nav .inner ul li a:hover {
 .contact__container__area_article {
   font-size: 1.3rem;
   color: white;
-  margin-top: 3%;
+  margin-top: 5%;
   text-align: center;
+}
+.contact__container__area_button {
+  margin: 5% auto;
 }
 
 .footer {
